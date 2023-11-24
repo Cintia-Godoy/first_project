@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Helloweather</title>
+    <meta charset="UTF-8" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/c61148aa2d.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c61148aa2d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <form id="search-form">
+        <input
+          type="search"
+          placeholder="Enter a city.."
+          required
+          class="search-input"
+          id ="search-input"
+        />
+        <input type="submit" value="Search" class="search-button" />
+      </form>
+    </header>
+    <div class="container">
+      <h1><div class="row">
+        <div class="col-md-6" id = "weather"></div>
+        <div class="col-md-6" id = "city-name">London-UK</div> 
+        </h1>
+
+         <br />
+
+    <h3><div class="row">
+    <div class="col-md-6">Precipitation 9mm</div> 
+    <div class ="col-md-6" id = "day-now"> </div>
+    <div class="col-md-6">Humidity 81%</div>
+    </h3>
+        <br /> 
+        <h2 class="text-center">
+          <div class="row">
+            <div class="col-md-2"> 12pm/20° <i class="fa-solid fa-cloud-showers-heavy"></i>  </div>
+            <div class="col-md-2">2pm/21°  <i class="fa-solid fa-cloud-showers-heavy"></i></div> 
+            <div class="col-md-2">4pm/21° <i class="fa-solid fa-cloud-showers-heavy"></i></div> 
+              <div class="col-md-2">6pm/19° <i class="fa-solid fa-cloud-showers-heavy"></i></div>
+              <div class="col-md-2">8pm/18° <i class="fa-solid fa-cloud-showers-heavy"></i></div>
+          </h2>
+        </div>
+        
+<br />
+<img src="images/rain.jpg" alt="" width="400px"/>
+<br />
+        <div class="row">
+            <div class="col-md-2">
+                <div class="card" style="width: 10rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Saturday</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary"> ☁️ 17°/21°</h6>
+                      <p class="card-text"> Mostly Cloudy. Chance of rain in the evening. </p>
+                      <a href="#" class="card-link">MoreInfo</a>
+                      <a href="#" class="card-link">HelloWeather</a>
+                    </div>
+                
+        </div>
+          </div>
+
+          <div class="col-md-2">
+              <div class="card" style="width: 10rem;">
+                  <div class="card-body">
+                    <h5 class="card-title"> 🌧️ Sunday</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">16°/20°</h6>
+                    <p class="card-text">Rain most of the day.</p>
+                    <a href="#" class="card-link">MoreInfo</a>
+                      <a href="#" class="card-link">HelloWeather</a>
+                  </div>
+                </div>
+          </div>
+
+          <div class="col-md-2">
+              <div class="card" style="width: 10rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Monday</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary"> 🌤️  16°/23°</h6>
+                    <p class="card-text">Partially sunny. No rain. </p>
+                    <a href="#" class="card-link">MoreInfo</a>
+                    <a href="#" class="card-link">HelloWeather</a>
+                  </div>
+                </div>
+          </div>
+
+          <div class="col-md-2">
+              <div class="card" style="width: 10rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Tuesday</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary"> 🌤️ 17°/25°</h6>
+                    <p class="card-text"> Partially sunny. Chance of thunderstorm in the afternoon.</p>
+                    <a href="#" class="card-link">MoreInfo</a>
+                    <a href="#" class="card-link">HelloWeather</a>
+                  </div>
+                </div>
+          </div>
+
+          <div class="col-md-2">
+              <div class="card" style="width: 10rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Wedsneday</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary"> ☀️ 19°/25°</h6>
+                    <p class="card-text"> Hot and sunny the whole day.</p>
+                    <a href="#" class="card-link">MoreInfo</a>
+                      <a href="#" class="card-link">HelloWeather</a>
+                  </div>
+                </div>
+          </div>
+        </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
